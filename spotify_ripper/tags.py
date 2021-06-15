@@ -81,7 +81,7 @@ def set_metadata_tags(args, audio_file, idx, track, ripper):
                 else:
                     return None
 
-        image_link = str(track.album.cover(0).link)
+        image_link = str(track.album.cover_link(2))
         image = get_cover_image(image_link)
         
         def tag_to_ascii(_str, _str_ascii):
